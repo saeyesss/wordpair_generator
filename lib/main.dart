@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import './random_words.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,7 +37,11 @@ class RandomWordState extends State<RandomWords> {
   }
 
   Widget _buildRow(WordPair pair) {
-    return ListTile(title: Text("Hello"));
+    return ListTile(
+        title: Text(
+      pair.asPascalCase,
+      style: TextStyle(fontSize: 18),
+    ));
   }
 
   Widget build(BuildContext context) {

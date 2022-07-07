@@ -10,6 +10,12 @@
                 "-d",
                 "web-server"
             ]
-        }
+        },
+        {
+            "name": "Android",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "RZ8NB03AQ7F"
+        },
     ]
 }
